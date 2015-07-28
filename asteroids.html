@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Asteroids</title>
+
+
+
+
+    <style media="screen">
+      html, body, canvas {
+        padding: 0px;
+        margin: 0px;
+      }
+    </style>
+  </head>
+  <body>
+    <canvas id="game-canvas">
+    </canvas>
+
+    <script src='/Users/appacademy/Desktop/w6d1/keymaster-master/keymaster.js' type="text/javascript">
+     </script>
+
+    <script src='/Users/appacademy/Desktop/w6d1/lib/utils.js' type="text/javascript">
+     </script>
+     <script src='/Users/appacademy/Desktop/w6d1/lib/movingObject.js' type="text/javascript">
+      </script>
+      <script src='/Users/appacademy/Desktop/w6d1/lib/asteroid.js' type="text/javascript">
+       </script>
+       <script src='/Users/appacademy/Desktop/w6d1/lib/bullet.js' type="text/javascript">
+        </script>
+
+  <script src='/Users/appacademy/Desktop/w6d1/lib/ship.js' type="text/javascript">
+   </script>
+   <script src='/Users/appacademy/Desktop/w6d1/lib/game.js' type="text/javascript">
+    </script>
+    <script src='/Users/appacademy/Desktop/w6d1/lib/gameView.js' type="text/javascript">
+     </script>
+   <script>
+     var canvasEl = document.getElementsByTagName("canvas")[0];
+     canvasEl.height = window.innerHeight;
+     canvasEl.width = window.innerWidth;
+
+     var game = new Asteroids.Game();
+     new Asteroids.GameView(game, canvasEl).start();
+   </script>
+  </body>
+</html>
